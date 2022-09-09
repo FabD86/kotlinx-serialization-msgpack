@@ -12,16 +12,16 @@ kotlin {
             kotlinOptions.jvmTarget = "1.8"
         }
     }
-    js {
-        browser {
-            testTask {
-                useKarma {
-                    useChromeHeadless()
-                    webpackConfig.cssSupport.enabled = true
-                }
-            }
-        }
-    }
+//    js {
+//        browser {
+//            testTask {
+//                useKarma {
+//                    useChromeHeadless()
+//                    webpackConfig.cssSupport.enabled = true
+//                }
+//            }
+//        }
+//    }
     ios()
     iosSimulatorArm64()
     tvos()
@@ -63,10 +63,10 @@ kotlin {
                 implementation(kotlin("test-junit"))
             }
         }
-        val jsTest by getting {
-            dependencies {
-                implementation(kotlin("test-js"))
-            }
-        }
+//        val jsTest by getting {
+//            dependencies {
+//                implementation(kotlin("test-js"))
+//            }
+//        }
     }
 }
